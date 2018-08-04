@@ -1,5 +1,5 @@
 # endpoints
-SERVER_ENDPOINT = 'http://10.0.0.195:8000'
+SERVER_ENDPOINT = 'http://0.0.0.0:8000'
 class endpoints():
     home = SERVER_ENDPOINT
     signin = SERVER_ENDPOINT + '/signin'
