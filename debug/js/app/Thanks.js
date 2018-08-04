@@ -24,7 +24,7 @@ BH.add('Thanks', function() {
         },
         
         setData: function(data) {
-	        this.get('name').text(data.first_name);
+            this.get('name').text(data.first_name);
 			this.get('appointment').text(data.scheduled_appointment_date);       
         }
         

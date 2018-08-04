@@ -1,0 +1,111 @@
+.responsive-image{
+    width: 100%;
+}
+
+.how-it-works{
+    align-content: center;
+    text-align: center;
+}
+
+.how-it-works-num{
+    text-decoration: underline;
+}
+
+.how-it-works-image{
+    width: 100%;
+    padding-left: 1%;
+    padding-right: 1%;
+}
+
+.online-style-package{
+    text-align: center;
+}
+
+.package-outer-box{
+    background-color: rgb(241, 241, 241);
+    padding: 5%;
+}
+
+.package-inner-box{
+    background-color: white;
+    border: 1px solid rgb(216, 216, 216);
+    padding: 5%;
+    text-align: center;
+}
+
+.online-style-package-steps{
+    text-align: left;
+    margin-left: 5%;
+}
+
+.testimonials{
+    text-align: center;
+    padding-top: 10pt;
+    padding-bottom: 10pt;
+}
+
+.testimonials-quote{
+    padding:50pt;
+}
+
+.testimonials-image{
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 5%;
+    width: 50%;
+}
+
+.FAQ{
+    text-align: center;
+    padding-top: 10pt;
+    padding-bottom: 50pt;
+}
+
+.FAQ-box{
+    margin: 10pt;
+    padding: 5%;
+    border:1pt solid gray;
+}
+
+.more{
+    text-decoration: underline;
+}
+
+/* Sign In & Sign Up */
+.field{
+    text-align: center;
+}
+
+.signin-button{
+    color: white;
+    background-color: rgb(219, 219, 219);
+    width: 100%;
+}
+
+.signup-text{
+    color:rgb(255, 136, 39);
+}
+
+.signup-box{
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-top: 2%;
+    margin-bottom: 2%;
+}
+
+.signin-text{
+    color: rgb(255, 136, 39);
+}
+
+.signup-button{
+    width: 100%;
+}
+
+.signout-text{
+    color: rgb(255, 136, 39);
+}
+
+.look-count{
+    background-color: rgb(255, 136, 39);
+    color: whitesmoke;
+}

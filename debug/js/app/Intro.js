@@ -15,6 +15,8 @@ BH.add('Intro', function() {
         
         _render: function() {
             this.parent._render.call(this);
+            // BUG NO.2 render the 'getStarterBtn
+            this.get('getStartedBtn').render();
         },        
 
         _behavior: function() {

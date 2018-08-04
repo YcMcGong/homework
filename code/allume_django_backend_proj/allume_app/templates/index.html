@@ -13,15 +13,16 @@
 	<script src="https://use.typekit.net/kka1pnq.js" async></script>
 	<script>try{Typekit.load({ async: true });}catch(e){}</script>
 
-    <link href="css/lib/bootstrap.min.css" rel="stylesheet">
-    <link href="css/shared/base.css" rel="stylesheet">
-    <link href="css/shared/hamburger.css" rel="stylesheet">
-    <link href="css/shared/header.css" rel="stylesheet">
-    <link href="css/shared/footer.css" rel="stylesheet">
-    <link href="css/index.css" rel="stylesheet">
+	{% load static %}
+    <link href="{% static 'css/lib/bootstrap.min.css' %}" rel="stylesheet">
+    <link href="{% static 'css/shared/base.css' %}" rel="stylesheet">
+    <link href="{% static 'css/shared/hamburger.css' %}" rel="stylesheet">
+    <link href="{% static 'css/shared/header.css' %}" rel="stylesheet">
+    <link href="{% static 'css/shared/footer.css' %}" rel="stylesheet">
+    <link href="{% static 'css/index.css' %}" rel="stylesheet">
     
-    <link rel="icon" type="image/png" href="img/favicon.png">
-    <link rel="apple-touch-icon" href="img/favicon.png">
+    <link rel="icon" type="image/png" href="{% static 'img/favicon.png' %}">
+    <link rel="apple-touch-icon" href="{% static 'img/favicon.png' %}">
 </head>
 
 <body class="home">
@@ -32,7 +33,7 @@
 
 			<div class="row inner">
 				<div class="col-md-4 col-xs-5 left">
-					<a href="#"><img src="img/logo-black.png" class="img-responsive" /></a>
+					<a href="#"><img src="{% static 'img/logo-black.png' %}" class="img-responsive" /></a>
 				</div>
 				<div class="col-md-8 col-xs-7 right">
 					
@@ -84,8 +85,8 @@
 			<!-- BEGIN CONTENT -->
 			<div class="row main-image">
 				<div class="col-md-12">
-					<img class='responsive-image hidden-xs' src='img/heros/hero-desktop.jpg'>
-					<img class='responsive-image visible-xs-block' src='img/heros/hero-mobile.jpg'>
+					<img class='responsive-image hidden-xs' src="{% static 'img/heros/hero-desktop.jpg' %}">
+					<img class='responsive-image visible-xs-block' src="{% static 'img/heros/hero-mobile.jpg' %}">
 				</div>
 			</div>
 
@@ -102,17 +103,17 @@
 					</div>
 					<div class="row how-it-works-image">
 						<div class="col-md-4">
-							<img class="how-it-works-image" src="img/how-1.jpg">
+							<img class="how-it-works-image" src="{% static 'img/how-1.jpg' %}">
 							<h3 class="how-it-works-num">01</h3>
 							<p>Take our style quiz to match with a personal shopper. You’ll connect 1:1 for a consultation over text messaging</p>
 						</div>
 						<div class="col-md-4">
-							<img class="how-it-works-image" src="img/lookbook_iphone.png">
+							<img class="how-it-works-image" src="{% static 'img/lookbook_iphone.png' %}" >
 							<h3 class="how-it-works-num">02</h3>
 							<p>She shops the entire Internet, then sends you a virtual Lookbook with clothes that fit your style, body & budget</p>
 						</div>
 						<div class="col-md-4">
-							<img class="how-it-works-image" src="img/how-3.jpg">
+							<img class="how-it-works-image" src="{% static 'img/how-3.jpg' %}">
 							<h3 class="how-it-works-num">03</h3>
 							<p>You purchase what you want right from your Lookbook. Items ship from brands & retailers directly. No box, no surprises</p>
 						</div>
@@ -132,33 +133,33 @@
 								<div class="line"></div>
 								<ul class="online-style-package-steps">
 									<ul>
-										<img class="hidden-xs" src="img/check-circle-peach.png"> 
-										<img class="visible-xs-inline-block" src="img/check-circle-peach-mobile.png">
+										<img class="hidden-xs" src="{% static 'img/check-circle-peach.png' %}"> 
+										<img class="visible-xs-inline-block" src="{% static 'img/check-circle-peach-mobile.png' %}" >
 										Complete our style quiz
 									</ul>
 									<ul>
-										<img class="hidden-xs" src="img/check-circle-peach.png">
-										<img class="visible-xs-inline-block" src="img/check-circle-peach-mobile.png">
+										<img class="hidden-xs" src="{% static 'img/check-circle-peach.png' %}"> 
+										<img class="visible-xs-inline-block" src="{% static 'img/check-circle-peach-mobile.png' %}" >
 										Match to personal shopper
 									</ul>
 									<ul>
-										<img class="hidden-xs" src="img/check-circle-peach.png">
-										<img class="visible-xs-inline-block" src="img/check-circle-peach-mobile.png">
+										<img class="hidden-xs" src="{% static 'img/check-circle-peach.png' %}"> 
+										<img class="visible-xs-inline-block" src="{% static 'img/check-circle-peach-mobile.png' %}" >
 										1:1 consult with shopper
 									</ul>
 									<ul>
-										<img class="hidden-xs" src="img/check-circle-peach.png">
-										<img class="visible-xs-inline-block" src="img/check-circle-peach-mobile.png">
+										<img class="hidden-xs" src="{% static 'img/check-circle-peach.png' %}"> 
+										<img class="visible-xs-inline-block" src="{% static 'img/check-circle-peach-mobile.png' %}" >
 										She shops just for you
 									</ul>
 									<ul>
-										<img class="hidden-xs" src="img/check-circle-peach.png">
-										<img class="visible-xs-inline-block" src="img/check-circle-peach-mobile.png">
+										<img class="hidden-xs" src="{% static 'img/check-circle-peach.png' %}"> 
+										<img class="visible-xs-inline-block" src="{% static 'img/check-circle-peach-mobile.png' %}" >
 										Receive a virtual Lookbook
 									</ul>
 									<ul>
-										<img class="hidden-xs" src="img/check-circle-peach.png">
-										<img class="visible-xs-inline-block" src="img/check-circle-peach-mobile.png">
+										<img class="hidden-xs" src="{% static 'img/check-circle-peach.png' %}"> 
+										<img class="visible-xs-inline-block" src="{% static 'img/check-circle-peach-mobile.png' %}" >
 										Buy only what you love
 									</ul>
 								</ul>
@@ -181,8 +182,8 @@
 
 			<div class="row banner">
 				<div class="col-md-12">
-					<img class="responsive-image hidden-xs" src="img/she-found-me-desktop.png">
-					<img class="responsive-image visible-xs-block" src="img/she-found-me-mobile.png">
+					<img class="responsive-image hidden-xs" src="{% static 'img/she-found-me-desktop.png' %}">
+					<img class="responsive-image visible-xs-block" src="{% static 'img/she-found-me-mobile.png' %}">
 				</div>
 			</div>
 
@@ -193,8 +194,8 @@
 				<div class="col-md-12">
 					<div class="row vertical-align">
 						<div class="col-md-6">
-							<img class="testimonials-image hidden-xs" src='img/testimonials/spring-1-desktop.png'>
-							<img class="testimonials-image visible-xs-block" src='img/testimonials/spring-1-mobile.png'>
+							<img class="testimonials-image hidden-xs" src="{% static 'img/testimonials/spring-1-desktop.png' %}" >
+							<img class="testimonials-image visible-xs-block" src="{% static 'img/testimonials/spring-1-mobile.png' %}">
 						</div>
 						<div class="col-md-6">
 							<label>Client: Marissa Sameron</label><br>
@@ -213,8 +214,8 @@
 								I can’t wait to wear them!"</div>
 						</div>
 						<div class="col-md-6">
-							<img class="testimonials-image hidden-xs" src='img/testimonials/spring-2-desktop.png'>
-							<img class="testimonials-image visible-xs-block" src="img/testimonials/spring-2-mobile.png">
+							<img class="testimonials-image hidden-xs" src="{% static 'img/testimonials/spring-2-desktop.png' %}">
+							<img class="testimonials-image visible-xs-block" src="{% static 'img/testimonials/spring-2-mobile.png' %}">
 						</div>
 						<div class="col-md-6 visible-xs-block">
 							<label>Client: Clarissa Chase</label><br>
@@ -226,8 +227,8 @@
 					</div>
 					<div class="row vertical-align">
 						<div class="col-md-6">
-							<img class="testimonials-image hidden-xs" src='img/testimonials/spring-3-desktop.png'>
-							<img class="testimonials-image visible-xs-block" src="img/testimonials/spring-3-mobile.png">
+							<img class="testimonials-image hidden-xs" src="{% static 'img/testimonials/spring-3-desktop.png' %}">
+							<img class="testimonials-image visible-xs-block" src="{% static 'img/testimonials/spring-3-mobile.png' %}">
 						</div>
 						<div class="col-md-6">
 							<label>Client: Monica Stone</label><br>
@@ -304,7 +305,7 @@
 						<button class="btn btn-primary"> Get Started </button>
 						<br>
 						<br>
-						<p> MORE QUESTIONS? Check out <a class="more" href="/faq"> FAQ's <img src="img/arrow-black.png"> </a>
+						<p> MORE QUESTIONS? Check out <a class="more" href="/faq"> FAQ's <img src="{% static 'img/arrow-black.png' %}"> </a>
 						</p>
 					</div>
 				</div>
@@ -315,8 +316,8 @@
 
 			<div class="row banner">
 				<div class="col-md-12">
-					<img class="responsive-image hidden-xs" src="img/my-shopper-gets-me-desktop.png">
-					<img class="responsive-image visible-xs-block" src="img/my-shopper-gets-me-mobile.png">
+					<img class="responsive-image hidden-xs" src="{% static 'img/my-shopper-gets-me-desktop.png' %}">
+					<img class="responsive-image visible-xs-block" src="{% static 'img/my-shopper-gets-me-mobile.png' %}">
 				</div>
 			</div>
 
@@ -398,9 +399,9 @@
 						<div class="col-md-3 social-wrapper">
 							
 							<ul class="social">
-								<li><a href="https://www.facebook.com/allumestyle" target="_blank" rel="noopener noreferrer"><img src="img/social/facebook.png" class="img-responsive" /></a></li>
-								<li><a href="https://www.instagram.com/allumestyle" target="_blank" rel="noopener noreferrer"><img src="img/social/instagram.png" class="img-responsive" /></a></li>
-								<li><a href="https://www.pinterest.com/allumestyle" target="_blank" rel="noopener noreferrer"><img src="img/social/pinterest.png" class="img-responsive" /></a></li>
+								<li><a href="https://www.facebook.com/allumestyle" target="_blank" rel="noopener noreferrer"><img src="{% static 'img/social/facebook.png' %}" class="img-responsive" /></a></li>
+								<li><a href="https://www.instagram.com/allumestyle" target="_blank" rel="noopener noreferrer"><img src="{% static 'img/social/instagram.png' %}" class="img-responsive" /></a></li>
+								<li><a href="https://www.pinterest.com/allumestyle" target="_blank" rel="noopener noreferrer"><img src="{% static 'img/social/pinterest.png' %}" class="img-responsive" /></a></li>
 							</ul>
 		
 						</div>
@@ -426,12 +427,12 @@
 	</div>
 	
 	<script type="text/javascript" src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
-	<script type="text/javascript" src="js/shared/BH.js"></script>
-	<script type="text/javascript" src="js/shared/System.js"></script>
-	<script type="text/javascript" src="js/shared/Button.js"></script>
-	<script type="text/javascript" src="js/shared/Header.js"></script>
+	<script type="text/javascript" src="{% static 'js/shared/BH.js' %}" src="js/shared/BH.js"></script>
+	<script type="text/javascript" src="{% static 'js/shared/System.js' %}"></script>
+	<script type="text/javascript" src="{% static 'js/shared/Button.js' %}"></script>
+	<script type="text/javascript" src="{% static 'js/shared/Header.js' %}"></script>
 
-	<script type="text/javascript" src="js/Index.js"></script>
+	<script type="text/javascript" src="{% static 'js/Index.js' %}"></script>
 
 </body>
 </html>

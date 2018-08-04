@@ -81,7 +81,8 @@ BH.add('Index', function() {
     }());
 
     if (!BH.Index) {
-		BH.Index = new Index($('bdy'));
+		// BUG NO.1 from bdy -> body
+		BH.Index = new Index($('body'));
 		BH.Index.render();
     }
 });

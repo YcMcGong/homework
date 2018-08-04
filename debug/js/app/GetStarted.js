@@ -105,15 +105,16 @@ BH.add('GetStarted', function() {
 			});
 
             this.on(this.get('nextBtn').get('clickEvent'), function() {
-				
 				BH.StylingService.save_user_info({
 					'first_name': me.get('firstName').getData(),
 					'last_name': me.get('lastName').getData(),
+					// BUG NO.3 this.get('phone') to me.get('phone')
 					'phone': me.get('phone').getData(),
-					'email': this.get('email').getData()
+					'email': me.get('email').getData()
 				}, function(response) {
 					me.get('GoToThanksEvent').fire(response);
-				});	            
+					// BUG NO.5 Added an alert method to show the random error
+				}, alert);  
             });
         },
 

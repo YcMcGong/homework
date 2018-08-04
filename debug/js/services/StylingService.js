@@ -13,7 +13,10 @@ BH.add('StylingService', function() {
 			if (random === 0) {
 				if (successCb) {
 					successCb({
-						'scheduled_appointment_date': 1543000626
+						// BUT NO.4 added first_name and kept the random error
+						// 'scheduled_appointment_date': 1543000626
+						'scheduled_appointment_date': '11/23/2018 11:17 am PST',
+						'first_name': data.first_name,
 					});
 				}
 			} else {
