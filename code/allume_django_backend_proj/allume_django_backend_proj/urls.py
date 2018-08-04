@@ -15,9 +15,19 @@ Including another URLconf
 """
 from django.conf.urls import url
 from django.contrib import admin
-from django.urls import path, include
 
+# Django 1.11.6
+from django.conf.urls import url, include
 urlpatterns = [
-    path('', include('allume_app.urls'), name='home'),
+    url(r'', include('allume_app.urls'), name='home'),
     url(r'^admin/', admin.site.urls),
 ]
+
+
+# Django2.0
+
+# from django.urls import path, include
+# urlpatterns = [
+#     path('', include('allume_app.urls'), name='home'),
+#     url(r'^admin/', admin.site.urls),
+# ]
